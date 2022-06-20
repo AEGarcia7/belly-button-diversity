@@ -42,7 +42,7 @@
 
 
 ## 7. Deploy your app to a free static page hosting service, such as GitHub Pages
-
+https://aegarcia7.github.io/web-visualization-challenge/
 
 [![Finis](https://i.postimg.cc/wThX1XQv/Finis.png)](https://postimg.cc/8fLXW0RW)
 
