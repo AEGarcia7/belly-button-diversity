@@ -35,7 +35,7 @@ function buildPlot(){
             //Prep the trace for the first chart, the horizontal chart
             const trace1 = {
                 x: filtID[0].sample_values.slice(0,10).reverse(),
-                y: filtID[0].otu_ids.slice(0,10).reverse(),
+                y: filtID[0].otu_ids.slice(0,10).map(otuID => `OTU ${otuID}`).reverse(),
                 text: filtID[0].otu_labels.slice(0,10).reverse(),
                 type: "bar",
                 orientation: 'h'
@@ -103,9 +103,12 @@ function buildPlot(){
         }
         //Make the actual graph with the data
         Plotly.newPlot('bubble', data2, layout2)
+        
     });
 });
+
 };
+
 //Run init to set up the page
 
 
